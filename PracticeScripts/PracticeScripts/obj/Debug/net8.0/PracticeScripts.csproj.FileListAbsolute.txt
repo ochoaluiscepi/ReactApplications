@@ -1,0 +1,15 @@
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.AssemblyInfoInputs.cache
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.AssemblyInfo.cs
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.csproj.CoreCompileInputs.cache
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.sourcelink.json
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\bin\Debug\net8.0\PracticeScripts.exe
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\bin\Debug\net8.0\PracticeScripts.deps.json
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\bin\Debug\net8.0\PracticeScripts.runtimeconfig.json
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\bin\Debug\net8.0\PracticeScripts.dll
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\bin\Debug\net8.0\PracticeScripts.pdb
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.dll
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\refint\PracticeScripts.dll
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.pdb
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\PracticeScripts.genruntimeconfig.cache
+C:\react\ReactApplications\PracticeScripts\PracticeScripts\obj\Debug\net8.0\ref\PracticeScripts.dll
