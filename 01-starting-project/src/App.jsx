@@ -3,12 +3,28 @@ import {CORE_CONCEPTS} from './data.js'
 import Header from './components/Header/Header.jsx'
 import CoreConcepts from './components/CoreConcepts.jsx'
 import TabButton from './components/TabButton.jsx'
+import {useState} from 'react';
 
 
 function App() {
 
+  const [valueDynamic, setValueDynamic] = useState('initial');
+
   function handleClick(selectedButton){
-    console.log('Hello');
+    switch(selectedButton){
+      case 'Components':
+        setValueDynamic(CORE_CONCEPTS[0].description);
+      break;
+      case 'JSX':
+        setValueDynamic(CORE_CONCEPTS[1].description);
+      break;
+      case 'Props':
+        setValueDynamic(CORE_CONCEPTS[2].description);
+      break;
+      case 'State':
+        setValueDynamic(CORE_CONCEPTS[3].description);
+      break;
+    }
 }
 
   return (
@@ -33,7 +49,7 @@ function App() {
             <TabButton onSelect={() => handleClick('Props')}>Props</TabButton>
             <TabButton onSelect={() => handleClick('State')}>State</TabButton>
           </menu>
-          Dinamic Content
+          {valueDynamic}
           </section>
       </main>
     </div>
