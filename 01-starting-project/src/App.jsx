@@ -1,5 +1,5 @@
 
-import {CORE_CONCEPTS} from './data.js'
+import {CORE_CONCEPTS, EXAMPLES} from './data.js'
 import Header from './components/Header/Header.jsx'
 import CoreConcepts from './components/CoreConcepts.jsx'
 import TabButton from './components/TabButton.jsx'
@@ -8,23 +8,12 @@ import {useState} from 'react';
 
 function App() {
 
-  const [valueDynamic, setValueDynamic] = useState('initial');
+  const [valueDynamic, setValueDynamic] = useState('components');
 
   function handleClick(selectedButton){
-    switch(selectedButton){
-      case 'Components':
-        setValueDynamic(CORE_CONCEPTS[0].description);
-      break;
-      case 'JSX':
-        setValueDynamic(CORE_CONCEPTS[1].description);
-      break;
-      case 'Props':
-        setValueDynamic(CORE_CONCEPTS[2].description);
-      break;
-      case 'State':
-        setValueDynamic(CORE_CONCEPTS[3].description);
-      break;
-    }
+
+    setValueDynamic(selectedButton);
+    
 }
 
   return (
@@ -44,12 +33,20 @@ function App() {
         <section id="examples">
           <h2>Example</h2>
           <menu>
-            <TabButton onSelect={() => handleClick('Components')}>Components</TabButton>
-            <TabButton onSelect={() => handleClick('JSX')}>JSX</TabButton>
-            <TabButton onSelect={() => handleClick('Props')}>Props</TabButton>
-            <TabButton onSelect={() => handleClick('State')}>State</TabButton>
+            <TabButton onSelect={() => handleClick('components')}>Components</TabButton>
+            <TabButton onSelect={() => handleClick('jsx')}>JSX</TabButton>
+            <TabButton onSelect={() => handleClick('props')}>Props</TabButton>
+            <TabButton onSelect={() => handleClick('state')}>State</TabButton>
           </menu>
-          {valueDynamic}
+          <div id="tab-content">
+            <h3>{EXAMPLES[valueDynamic].title}</h3>
+            <p>{EXAMPLES[valueDynamic].description}</p>
+            <pre>
+              <code>
+              {EXAMPLES[valueDynamic].code}
+              </code>
+            </pre>
+          </div>
           </section>
       </main>
     </div>
