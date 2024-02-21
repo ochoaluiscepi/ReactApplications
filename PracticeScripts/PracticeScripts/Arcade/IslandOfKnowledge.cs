@@ -42,5 +42,26 @@ namespace PracticeScripts.Arcade
             }
             return true;
         }
+        public int ArrayMaximalAdjacentDifference(int[] inputArray)
+        {
+            int maxNumber = 0;
+            for (int x = 0; x < inputArray.Length - 1; x++)
+            {
+                if (inputArray[x] < inputArray[x + 1] && (inputArray[x + 1] - inputArray[x]) > maxNumber)
+                {
+                    maxNumber = inputArray[x + 1] - inputArray[x];
+                }
+                else if ((inputArray[x] - inputArray[x + 1]) > maxNumber)
+                {
+                    maxNumber = inputArray[x] - inputArray[x + 1];
+                }
+            }
+            return maxNumber;
+        }
+        public bool AreEquallyStrong(int yourLeft, int yourRight, int friendsLeft, int friendsRight)
+        {
+            return (yourLeft == friendsLeft && yourRight == friendsRight) || (yourLeft == friendsRight && yourRight == friendsLeft);
+        }
+
     }
 }

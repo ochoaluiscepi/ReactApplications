@@ -31,6 +31,27 @@ namespace PracticeScripts.Tests.Arcade
             //Assert
             Assert.IsTrue(result);
         }
+        [Test]
+        public void AreEqualStrongTest()
+        {
+            //Arrange
 
+            IslandOfKnowledge thej = new IslandOfKnowledge();
+            //Act
+            bool result = thej.AreEquallyStrong(20,5,20,5);
+            //Assert
+            Assert.IsTrue(result);
+        }
+        [Test]
+        public void ArrayMaximalAdjacentDifferenceTest()
+        {
+            //Arrange
+            int[] arr = new int[] { 2, 4, 1, 0 };
+            IslandOfKnowledge thej = new IslandOfKnowledge();
+            //Act
+            int result = thej.ArrayMaximalAdjacentDifference(arr);
+            //Assert
+            Assert.IsTrue(result == 3);
+        }
     }
 }
