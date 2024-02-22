@@ -8,13 +8,25 @@ import {useState} from 'react';
 
 function App() {
 
-  const [valueDynamic, setValueDynamic] = useState('components');
+  const [valueDynamic, setValueDynamic] = useState('');
+
+  let message = <p>Please select a topic</p>;
+
+  if(valueDynamic){
+    message = <div id="tab-content">
+    <h3>{EXAMPLES[valueDynamic].title}</h3>
+    <p>{EXAMPLES[valueDynamic].description}</p>
+    <pre>
+      <code>
+      {EXAMPLES[valueDynamic].code}
+      </code>
+    </pre>
+    </div>
+  }
 
   function handleClick(selectedButton){
-
     setValueDynamic(selectedButton);
-    
-}
+  }
 
   return (
     <div>
@@ -33,20 +45,15 @@ function App() {
         <section id="examples">
           <h2>Example</h2>
           <menu>
-            <TabButton onSelect={() => handleClick('components')}>Components</TabButton>
-            <TabButton onSelect={() => handleClick('jsx')}>JSX</TabButton>
-            <TabButton onSelect={() => handleClick('props')}>Props</TabButton>
-            <TabButton onSelect={() => handleClick('state')}>State</TabButton>
+            <TabButton isSelected={valueDynamic == "components"} onSelect={() => handleClick('components')}>Components</TabButton>
+            <TabButton isSelected={valueDynamic == "jsx"} onSelect={() => handleClick('jsx')}>JSX</TabButton>
+            <TabButton isSelected={valueDynamic == "props"} onSelect={() => handleClick('props')}>Props</TabButton>
+            <TabButton isSelected={valueDynamic == "state"} onSelect={() => handleClick('state')}>State</TabButton>
           </menu>
-          <div id="tab-content">
-            <h3>{EXAMPLES[valueDynamic].title}</h3>
-            <p>{EXAMPLES[valueDynamic].description}</p>
-            <pre>
-              <code>
-              {EXAMPLES[valueDynamic].code}
-              </code>
-            </pre>
-          </div>
+          
+            {message}
+           
+          
           </section>
       </main>
     </div>
