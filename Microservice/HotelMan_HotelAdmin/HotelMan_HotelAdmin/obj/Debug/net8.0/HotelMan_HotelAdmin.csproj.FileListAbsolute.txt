@@ -1,0 +1,13 @@
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Debug\net8.0\HotelMan_HotelAdmin.deps.json
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Debug\net8.0\HotelMan_HotelAdmin.dll
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\bin\Debug\net8.0\HotelMan_HotelAdmin.pdb
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.csproj.AssemblyReference.cache
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.GeneratedMSBuildEditorConfig.editorconfig
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.AssemblyInfoInputs.cache
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.AssemblyInfo.cs
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.csproj.CoreCompileInputs.cache
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.sourcelink.json
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.dll
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\refint\HotelMan_HotelAdmin.dll
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\HotelMan_HotelAdmin.pdb
+C:\react\ReactApplications\Microservice\HotelMan_HotelAdmin\HotelMan_HotelAdmin\obj\Debug\net8.0\ref\HotelMan_HotelAdmin.dll
