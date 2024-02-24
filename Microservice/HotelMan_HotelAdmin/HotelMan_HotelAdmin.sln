@@ -1,6 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelMan_HotelAdmin", "HotelMan_HotelAdmin\HotelMan_HotelAdmin.csproj", "{993EDD8E-ED27-4EA5-AD72-49BFF841646E}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelMan_HotelAdmin", "HotelMan_HotelAdmin\HotelMan_HotelAdmin.csproj", "{993EDD8E-ED27-4EA5-AD72-49BFF841646E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaAuthorizer", "..\MicroservicesWithAWS_Dotnet_Lambda_Authorizer-main\LambdaAuthorizer\LambdaAuthorizer.csproj", "{C67D6680-0881-42D8-96D1-AB9B1E4BB9E0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MicroservicesWithAWS_FrontEnd", "..\MicroservicesWithAWS_FrontEnd\", "{21DF8479-293D-457D-9367-B28433AF133F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51840"
+		Debug.AspNetCompiler.PhysicalPath = "..\MicroservicesWithAWS_FrontEnd\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51840\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51840"
+		Release.AspNetCompiler.PhysicalPath = "..\MicroservicesWithAWS_FrontEnd\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51840\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51840"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelCreatedEventHandler", "..\Microservices_Dotnet_AWS_HotelCreatedEVent_Handler_Order_Domain-main\HotelCreatedEventHandler\HotelCreatedEventHandler.csproj", "{77A87A26-90F9-462A-A34C-050A7E1769CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchApi", "..\MicroservicesWithAWS_Dotnet_SearchAPI-main\SearchApi\SearchApi.csproj", "{A49B33B2-C91F-407C-8A64-24B36151E270}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +41,27 @@ Global
 		{993EDD8E-ED27-4EA5-AD72-49BFF841646E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{993EDD8E-ED27-4EA5-AD72-49BFF841646E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{993EDD8E-ED27-4EA5-AD72-49BFF841646E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67D6680-0881-42D8-96D1-AB9B1E4BB9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67D6680-0881-42D8-96D1-AB9B1E4BB9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67D6680-0881-42D8-96D1-AB9B1E4BB9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67D6680-0881-42D8-96D1-AB9B1E4BB9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21DF8479-293D-457D-9367-B28433AF133F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DF8479-293D-457D-9367-B28433AF133F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21DF8479-293D-457D-9367-B28433AF133F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{21DF8479-293D-457D-9367-B28433AF133F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{77A87A26-90F9-462A-A34C-050A7E1769CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A87A26-90F9-462A-A34C-050A7E1769CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A87A26-90F9-462A-A34C-050A7E1769CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A87A26-90F9-462A-A34C-050A7E1769CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A49B33B2-C91F-407C-8A64-24B36151E270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A49B33B2-C91F-407C-8A64-24B36151E270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A49B33B2-C91F-407C-8A64-24B36151E270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A49B33B2-C91F-407C-8A64-24B36151E270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBCAD022-DCF4-4B61-BA7C-E3787C0A086B}
 	EndGlobalSection
 EndGlobal

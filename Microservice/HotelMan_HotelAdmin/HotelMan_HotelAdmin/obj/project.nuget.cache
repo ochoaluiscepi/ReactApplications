@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PquKQXKSX66jUsJTICyRyyLTdtpW0RpkmIZ6AgpKVa+Za53/jwALeRNiuYk/+FBGis2k4ec77N/7BA5NSxlvzA==",
+  "dgSpecHash": "UFdUasL1WxRpHpp6FMRAUBSzUWhIIE13zxUL0hkQSxpHdv/ly0dgr2Wg6IemQyyyJvWIgmhMkjY3Rc7b03mc1A==",
   "success": true,
   "projectFilePath": "C:\\react\\ReactApplications\\Microservice\\HotelMan_HotelAdmin\\HotelMan_HotelAdmin\\HotelMan_HotelAdmin.csproj",
   "expectedPackageFiles": [
@@ -21,13 +21,8 @@
     "C:\\Users\\ochoa\\.nuget\\packages\\microsoft.io.recyclablememorystream\\2.2.1\\microsoft.io.recyclablememorystream.2.2.1.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\ochoa\\.nuget\\packages\\runtime.any.system.runtime\\4.3.0\\runtime.any.system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\ochoa\\.nuget\\packages\\runtime.any.system.text.encoding\\4.3.0\\runtime.any.system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\ochoa\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
-    "C:\\Users\\ochoa\\.nuget\\packages\\runtime.unix.system.private.uri\\4.3.0\\runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.28.1\\system.identitymodel.tokens.jwt.6.28.1.nupkg.sha512",
-    "C:\\Users\\ochoa\\.nuget\\packages\\system.private.uri\\4.3.0\\system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\ochoa\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
@@ -42,8 +37,7 @@
       "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.28.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
+        "net8.0"
       ]
     },
     {
@@ -53,8 +47,7 @@
       "message": "Package 'System.IdentityModel.Tokens.Jwt' 6.28.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
       "libraryId": "System.IdentityModel.Tokens.Jwt",
       "targetGraphs": [
-        "net8.0",
-        "net8.0/linux-x64"
+        "net8.0"
       ]
     }
   ]
