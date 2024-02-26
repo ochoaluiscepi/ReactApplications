@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AWSDockerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9885579738cb247545d3763cd2b9eadcd33cc99b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67fe8fa30b534da8f405467d6d926dfcea716c0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AWSDockerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AWSDockerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
