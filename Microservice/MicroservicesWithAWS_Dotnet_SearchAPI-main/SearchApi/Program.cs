@@ -52,41 +52,51 @@ app.MapGet("/search", async (string? city, int? rating) =>
 
 async Task<List<Hotel>> SearchHotels(string? city, int? rating)
 {
-    var host = Environment.GetEnvironmentVariable("host");
-    var userName = Environment.GetEnvironmentVariable("userName");
-    var password = Environment.GetEnvironmentVariable("password");
-    var indexName = Environment.GetEnvironmentVariable("indexName");
+    /* var host = Environment.GetEnvironmentVariable("host");
+     var userName = Environment.GetEnvironmentVariable("userName");
+     var password = Environment.GetEnvironmentVariable("password");
+     var indexName = Environment.GetEnvironmentVariable("indexName");
 
-    var conSett = new ConnectionSettings(new Uri(host));
-    conSett.BasicAuthentication(userName, password);
-    conSett.DefaultIndex(indexName);
-    conSett.DefaultMappingFor<Hotel>(m => m.IdProperty(p => p.Id));
-    var client = new ElasticClient(conSett);
+     var conSett = new ConnectionSettings(new Uri(host));
+     conSett.BasicAuthentication(userName, password);
+     conSett.DefaultIndex(indexName);
+     conSett.DefaultMappingFor<Hotel>(m => m.IdProperty(p => p.Id));
+     var client = new ElasticClient(conSett);
 
-    rating ??= 1;
+     rating ??= 1;
 
-    // Match 
-    // Prefix 
-    // Range
-    // Fuzzy Match
+     // Match 
+     // Prefix 
+     // Range
+     // Fuzzy Match
 
-    ISearchResponse<Hotel> result;
+     ISearchResponse<Hotel> result;
 
-    if (city is null)
-        result = await client.SearchAsync<Hotel>(s => s.Query(q =>
-            q.MatchAll() &&
-            q.Range(r => r.Field(f => f.Rating).GreaterThanOrEquals(rating))
-        ));
-    else
-        result = await client.SearchAsync<Hotel>(s =>
-            s.Query(q =>
-                q.Prefix(p => p.Field(f => f.CityName).Value(city).CaseInsensitive())
-                &&
-                q.Range(r => r.Field(f => f.Rating).GreaterThanOrEquals(rating))
-            )
-        );
+     if (city is null)
+         result = await client.SearchAsync<Hotel>(s => s.Query(q =>
+             q.MatchAll() &&
+             q.Range(r => r.Field(f => f.Rating).GreaterThanOrEquals(rating))
+         ));
+     else
+         result = await client.SearchAsync<Hotel>(s =>
+             s.Query(q =>
+                 q.Prefix(p => p.Field(f => f.CityName).Value(city).CaseInsensitive())
+                 &&
+                 q.Range(r => r.Field(f => f.Rating).GreaterThanOrEquals(rating))
+             )
+         );
 
-    return result.Hits.Select(x => x.Source).ToList();
+     return result.Hits.Select(x => x.Source).ToList();*/
+
+    return new List<Hotel>() { new Hotel {
+     CityName = "Paris",
+      FileName = "ParisFile",
+       Id = "Par",
+        Name = "Paris France",
+         Price = 100,
+          Rating = 5,
+           userId = "Luis"
+    }  };
 }
 
 app.Run();

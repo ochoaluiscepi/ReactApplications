@@ -25,6 +25,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MicroservicesWithAWS_FrontE
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "51840"
+		SlnRelativePath = "..\MicroservicesWithAWS_FrontEnd\"
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelCreatedEventHandler", "..\Microservices_Dotnet_AWS_HotelCreatedEVent_Handler_Order_Domain-main\HotelCreatedEventHandler\HotelCreatedEventHandler.csproj", "{77A87A26-90F9-462A-A34C-050A7E1769CF}"

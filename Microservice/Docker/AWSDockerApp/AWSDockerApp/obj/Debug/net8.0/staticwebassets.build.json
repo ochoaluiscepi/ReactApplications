@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wC2ju9iyPW//EOhxmQ06cpFUWtlHbLlWcWhmPopioQA=",
+  "Source": "AWSDockerApp",
+  "BasePath": "_content/AWSDockerApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
