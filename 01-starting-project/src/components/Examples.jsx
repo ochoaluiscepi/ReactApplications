@@ -1,6 +1,8 @@
-import TabButton from './TabButton.jsx'
+import TabButton from './TabButton.jsx';
 import {useState} from 'react';
-import {EXAMPLES} from '../data.js'
+import {EXAMPLES} from '../data.js';
+import Section from './Section.jsx';
+import Tabs from './Tabs.jsx';
 
 export default function Examples(){
     const [valueDynamic, setValueDynamic] = useState('');
@@ -26,16 +28,18 @@ export default function Examples(){
     return (
         <>
         <h2>Time to get started!</h2>
-        <section id="examples">
-          <h2>Example</h2>
-          <menu>
-            <TabButton isSelected={valueDynamic == "components"} onSelect={() => handleClick('components')}>Components</TabButton>
-            <TabButton isSelected={valueDynamic == "jsx"} onSelect={() => handleClick('jsx')}>JSX</TabButton>
-            <TabButton isSelected={valueDynamic == "props"} onSelect={() => handleClick('props')}>Props</TabButton>
-            <TabButton isSelected={valueDynamic == "state"} onSelect={() => handleClick('state')}>State</TabButton>
-          </menu>
+        <Section title="Examples" id="examples">
+          <Tabs 
+            buttonsContainer="menu" 
+              buttons={
+              <><TabButton isSelected={valueDynamic == "components"} onClick={() => handleClick('components')}>Components</TabButton>
+              <TabButton isSelected={valueDynamic == "jsx"} onClick={() => handleClick('jsx')}>JSX</TabButton>
+              <TabButton isSelected={valueDynamic == "props"} onClick={() => handleClick('props')}>Props</TabButton>
+              <TabButton isSelected={valueDynamic == "state"} onClick={() => handleClick('state')}>State</TabButton></>}>
             {message}
-          </section>
+          </Tabs>
+            
+          </Section>
 </>
     );
 }
