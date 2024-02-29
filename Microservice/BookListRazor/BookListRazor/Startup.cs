@@ -56,6 +56,7 @@ namespace BookListRazor
                 endpoints.MapControllers();
                 endpoints.MapRazorPages();
             });
+
         }
     }
 }
