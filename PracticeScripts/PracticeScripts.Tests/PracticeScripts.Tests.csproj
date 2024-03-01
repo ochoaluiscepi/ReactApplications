@@ -21,4 +21,8 @@
     <ProjectReference Include="..\PracticeScripts\PracticeScripts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CompanyChallenges\" />
+  </ItemGroup>
+
 </Project>
