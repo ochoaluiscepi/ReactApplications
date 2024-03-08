@@ -20,6 +20,7 @@ export default function Player({name, symbol,isActive}){
         playerName = <input type="text" onChange={handleEditPlayerName} className="" required value={isName}/>;
     }
 
+    
     return (
         <li className={isActive ? 'active':''}>
           <span className="player">
