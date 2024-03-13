@@ -67,9 +67,6 @@ namespace PracticeScripts.Custom
         }
         public int SpartInterview(string[] args)
         {
-            // Console.WriteLine("Sample debug output");
-            //return error since args should cannot be non
-
             if (args.Length == 0) return -1;
 
             int finalValue = 0;
@@ -96,7 +93,6 @@ namespace PracticeScripts.Custom
                             break;
                         default:
                             return -1;
-                            break;
                     }
                 }
                 catch
@@ -105,12 +101,7 @@ namespace PracticeScripts.Custom
                 }
             }
             return finalValue;
-            // throw new System.ArgumentException("Not yet implemented");
-
         }
-
-
-
 
     }
 }
