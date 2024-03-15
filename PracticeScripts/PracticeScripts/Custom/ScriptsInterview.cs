@@ -102,42 +102,51 @@ namespace PracticeScripts.Custom
             }
             return finalValue;
         }
-        public int PracticeInterview(string[] args)
+        public bool mismaDiferencia(int[] arr)
         {
-            if (args.Length == 0) return -1;
-
-            int finalValue = 0;
-            int x = 0;
-            while (x < args.Length)
-            {
-                try
+            //ordenar
+            /*for (int y = 0; y < arr.Length - 1; y++)
+                for (int x = 0; x < arr.Length - 1; x++)
                 {
-                    switch (args[x].ToString().ToUpper())
+                    if (arr[x] > arr[x + 1])
                     {
-                        case "--NAME":
-                            if (args[x + 1].Length < 3 || args[x + 1].Length > 10)
-                                return -1;
-                            x = x + 2;
-                            break;
-                        case "--COUNT":
-                            if (int.Parse(args[x + 1]) > 100 || int.Parse(args[x + 1]) < 10)
-                                return -1;
-                            x = x + 2;
-                            break;
-                        case "--HELP":
-                            finalValue = 1;
-                            x++;
-                            break;
-                        default:
-                            return -1;
+                        int reordena = arr[x + 1];
+                        arr[x + 1] = arr[x];
+                        arr[x] = reordena;
                     }
-                }
-                catch
-                {
-                    return -1;
-                }
+                }*/
+
+            int diferencia = Math.Abs(arr[0] - arr[1]);
+
+            for (int x = 0; x < arr.Length - 1; x++)
+            {
+                if (Math.Abs(arr[x] - arr[x + 1]) != diferencia)
+                    return false;
             }
-            return finalValue;
+
+            return true;
+        }
+        public int mayorDiferencia(int[] arr)
+        {
+            for (int y = 0; y < arr.Length - 1; y++)
+                for (int x = 0; x < arr.Length - 1; x++)
+                    if (arr[x] > arr[x + 1])
+                    {
+                        int reordena = arr[x + 1];
+                        arr[x + 1] = arr[x];
+                        arr[x] = reordena;
+                    }
+
+            return Math.Abs(arr[0] - arr[arr.Length - 1]);
+        }
+        public bool contiene(int[] arr, int buscar, int minimo)
+        {
+            //ordenar
+            var repite = arr.GroupBy(c => c).ToDictionary(g => g.Key, g => g.Count());
+
+            var element = repite.Where(c => c.Key == buscar).FirstOrDefault();
+
+            return element.Value >= minimo; 
         }
     }
 }
