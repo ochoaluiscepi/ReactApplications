@@ -102,6 +102,42 @@ namespace PracticeScripts.Custom
             }
             return finalValue;
         }
+        public int PracticeInterview(string[] args)
+        {
+            if (args.Length == 0) return -1;
 
+            int finalValue = 0;
+            int x = 0;
+            while (x < args.Length)
+            {
+                try
+                {
+                    switch (args[x].ToString().ToUpper())
+                    {
+                        case "--NAME":
+                            if (args[x + 1].Length < 3 || args[x + 1].Length > 10)
+                                return -1;
+                            x = x + 2;
+                            break;
+                        case "--COUNT":
+                            if (int.Parse(args[x + 1]) > 100 || int.Parse(args[x + 1]) < 10)
+                                return -1;
+                            x = x + 2;
+                            break;
+                        case "--HELP":
+                            finalValue = 1;
+                            x++;
+                            break;
+                        default:
+                            return -1;
+                    }
+                }
+                catch
+                {
+                    return -1;
+                }
+            }
+            return finalValue;
+        }
     }
 }
