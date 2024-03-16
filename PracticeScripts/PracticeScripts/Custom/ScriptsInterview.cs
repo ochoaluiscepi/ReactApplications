@@ -144,9 +144,8 @@ namespace PracticeScripts.Custom
             //ordenar
             var repite = arr.GroupBy(c => c).ToDictionary(g => g.Key, g => g.Count());
 
-            var element = repite.Where(c => c.Key == buscar).FirstOrDefault();
+            return repite.Where(c => c.Key == buscar && c.Value >=minimo).Count() > 0;
 
-            return element.Value >= minimo; 
         }
     }
 }
