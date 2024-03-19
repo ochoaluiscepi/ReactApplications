@@ -104,17 +104,7 @@ namespace PracticeScripts.Custom
         }
         public bool mismaDiferencia(int[] arr)
         {
-            //ordenar
-            /*for (int y = 0; y < arr.Length - 1; y++)
-                for (int x = 0; x < arr.Length - 1; x++)
-                {
-                    if (arr[x] > arr[x + 1])
-                    {
-                        int reordena = arr[x + 1];
-                        arr[x + 1] = arr[x];
-                        arr[x] = reordena;
-                    }
-                }*/
+            
 
             int diferencia = Math.Abs(arr[0] - arr[1]);
 
