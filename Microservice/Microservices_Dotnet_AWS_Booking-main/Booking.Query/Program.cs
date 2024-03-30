@@ -13,7 +13,7 @@ builder.Services.AddCors(c =>
 var app = builder.Build();
 app.UseCors();
 
-
+//test
 app.MapGet("/query", async (string? idToken) =>
 {
     var idTokenDetails = new JwtSecurityToken(idToken);
